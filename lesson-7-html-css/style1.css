@@ -1,0 +1,56 @@
+h1 {
+  text-align: right;
+  color: orange;
+}
+
+em {
+  color: white;
+  background-color: green;
+}
+
+p:first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+p + h2 {
+  color: orange;
+}
+
+ul {
+  font-weight: bold;
+}
+
+ol li {
+  color: gray;
+}
+
+ul ~ ul li ol li {
+  color: green;
+}
+
+ul > li ~ li ol li {
+  color: red;
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+tr ~ tr ~ tr td {
+  text-align: left;
+  color: orange;
+}
+
+tr ~ tr ~ tr td + td {
+  text-align: center;
+  color: white;
+  background: green;
+}
