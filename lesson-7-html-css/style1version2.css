@@ -1,0 +1,55 @@
+h1 {
+  text-align: right;
+  color: orange;
+}
+
+em {
+  color: white;
+  background-color: green;
+}
+
+p:first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+p + h2 {
+  color: orange;
+}
+
+ul {
+  font-weight: bold;
+}
+
+ol li {
+  color: red;
+}
+
+.grey {
+  color: grey;
+}
+
+.green {
+  color: green;
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.name {
+  text-align: left;
+  color: orange;
+}
+
+.numbers {
+  color: white;
+  background-color: green;
+}
