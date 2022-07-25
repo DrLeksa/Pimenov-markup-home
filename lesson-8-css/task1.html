@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 8. Task 1.</title>
+  </head>
+  <body>
+    <h1>Sign up to the app</h1>
+    <form>
+      <p>
+      <fieldset>
+        <legend>Personal information:</legend>
+        <label>First name:<br>
+          <input type="text" name="firstname" value="Mickey" placeholder="First name">
+          <!--для input же не обязателен id, если он вложен в label и для других целей идентификор нам не нужен?-->
+        </label>
+        <p> <!--обернул в параграф ради отступов сверху и снизу-->
+          <label>Last name:<br>
+            <input type="text" name="lastname" value="Mouse" placeholder="Last name">
+          </label>
+        </p>
+        <label>Self-presentation:<br>
+          <textarea name="self-text" rows="10" cols="30">The cat was playing in the garden.</textarea>
+        </label>
+      </fieldset>
+      </p>
+      <p>
+      <fieldset>
+        <legend>Car info (the brand):</legend>
+        <select name="car brand"><!--тоже самое, id же не обязателен? подпись - label мы не используем,
+                                   что бы связять их через for и id, а идентификор, допустим, нам тут не нужен-->
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </fieldset>
+      </p>
+      <p>
+      <fieldset>
+        <legend>Choose one:</legend>
+        <!--не вкладывал input в label для примера и практики такого варианта написания кода-->
+        <input type="radio" id="gender1" name="gender" value="male" checked>
+        <label for="gender1">Male</label><br>
+        <input type="radio" id="gender2" name="gender" value="female">
+        <label for="gender2">Female</label><br>
+        <input type="radio" id="gender3" name="gender" value="other">
+        <label for="gender3">Other</label>
+        <!--уже после написания, подумал, что для radio лучше вкладывать input в label, что бы не делать уникальный
+        id для всех пункотв(собственно, про id, вы говорили на занятии), но уже оставил как есть-->
+      </fieldset>
+      </p>
+      <p>
+      <fieldset>
+        <legend>Choose many:</legend>
+        <label><input type="checkbox" name="selection menu" value="bike"> I have a bike</label><br>
+        <label><input type="checkbox" name="selection menu" value="car"> I have a car</label>
+      </fieldset>
+      </p>
+      <label>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+      </label>
+    </form>
+  </body>
+</html>
