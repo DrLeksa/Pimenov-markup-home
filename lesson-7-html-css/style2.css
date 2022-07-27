@@ -1,0 +1,13 @@
+a[href^='https'] {
+  color: #f70;
+}
+
+a[href*='google'] {
+  color: #666;
+}
+
+mark {
+  writing-mode: vertical-lr;
+  color: #f70;
+  background-color: white;
+}
