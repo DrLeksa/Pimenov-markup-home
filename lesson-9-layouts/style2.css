@@ -66,3 +66,10 @@ sub {
   padding: 5px 8px;
   color: black;
 }
+
+#active {
+  background-color: #A13BCF;
+  color: white;
+  border: 1px solid #7C12BC;
+  text-shadow: 1px 1px 1px black;
+}
