@@ -1,0 +1,52 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header и footer скопировал с главной страницы,
+соответсвенно css к ним находится в shared.css */
+
+.info1 {
+  margin: 21% 9% 15% 0;
+  text-align: right;
+  float: right;
+  width: 30%;
+}
+
+.info2 {
+  margin: 15% 0 15% 6%;
+  text-align: left;
+  float: left;
+  width: 30%;
+}
+
+h1 {
+  padding: 1px;
+  margin: 0;
+  color: #D14123;
+}
+
+h5 {
+  padding: 1px 0 7px;
+  margin: 0;
+  color: #afafaf;
+}
+
+p {
+  margin: 0;
+}
+
+.customer1 {
+  margin: 110px 0 0;
+  float: left;
+  width: 60%;
+}
+
+.customer2 {
+  margin: 50px 0 0;
+  float: right;
+  width: 60%;
+}
+
+.clear {
+  clear: both;
+}
