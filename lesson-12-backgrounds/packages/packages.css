@@ -1,6 +1,12 @@
 body {
-  font-family: 'Montserrat', sans-serif;
   background: no-repeat url("../images/plans-background.jpg");
+}
+
+.plan-block__link,
+.plan-block__link:visited,
+.plan-block__link:active {
+  text-decoration: none;
+  color: black;
 }
 
 h6 {
@@ -27,20 +33,21 @@ p {
 }
 
 .plan-block {
-  position: relative;
+  float: left;
   padding: 20px 0;
-  margin: 30px 0;
+  margin: 40px 0 5px;
   width: 80%;
   background-color: rgb(169,169,167,0.9);
   border: 4px solid #926D65;
 }
 
 .PLUS {
+  margin: 95px 0 0;
   border-left: none;
 }
 
 .FREE {
-  left: 20%;
+  float: right;
   text-align: right;
   border-right: none;
 }
@@ -56,4 +63,11 @@ p {
 
 .PREMIUM > h2 + h2 {
   color: #afafaf;
+}
+
+.main-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
