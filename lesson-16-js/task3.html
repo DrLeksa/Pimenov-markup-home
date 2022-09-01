@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+      /* сходу не придумал как решить задание, как вы и говорили, пошёл искать решение,
+      нашёл, всё разобрал, всё понял, что к чему и почему, кроме 'return a;' оно было в решении,
+      там, где я его закомментил, подскажите, пожалуйста, зачем оно там*/
+      function pow(x,n) {
+        var a = x;
+        for (var i = 1; i < n; i++) {
+          a *=  x;
+        }
+        /* return a; */
+
+        if (n === 0) {
+          a = 1;
+        }
+
+        if (n === 1) {
+          a = x;
+        }
+
+        console.log(a);
+      }
+      pow(5,5);
+      pow(5, 2);
+      pow(2, 5);
+      pow(10,5);
+      pow(3, 2);
+      pow(1, 100);
+      pow(5,0);
+      pow(5,1);
+    </script>
+  </body>
+</html>
