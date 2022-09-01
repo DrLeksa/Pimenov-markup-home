@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+  </head>
+  <body>
+    <script>
+      var firstName = prompt('Ваше Имя ?');
+      var lastName = prompt('Ваша Фамилия ?');
+      var patronymic = prompt('Ваше Отчество ?');
+      var age = parseInt(prompt('Сколько вам лет ?'));
+      var gender = confirm('Ваш пол - мужской?');
+
+      var fullName = firstName + ' ' +lastName + ' ' + patronymic;
+
+      var ageInDays = age * 365;
+      var ageIn5Years = age + 5;
+
+      gender = gender?'мужской':'женский';
+
+      var pension = (age>60)?'да':'нет';
+
+      alert('ваше ФИО: ' + fullName + "\n" + 'ваш возраст в годах: ' + age + "\n" + 'ваш возраст в днях: ' +
+        ageInDays + "\n" + 'через 5 лет вам будет: ' + ageIn5Years + "\n" + 'ваш пол: ' + gender + "\n" +
+        'вы на пенсии: ' + pension);
+    </script>
+  </body>
+</html>
