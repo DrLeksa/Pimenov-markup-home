@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      var a = 1;
+      var b = 100;
+
+      /* Задание звучит как - "Исправьте 1-ю задачу так, чтобы она выводила «Fuddy-Duddy» для всех чисел, которые
+      делятся и на 3, и на 5", тут немного не понятно, если надо только «Fuddy-Duddy» тогда оставлляем только первый
+      оператор if, если же «Fuddy-Duddy» нужно добавить, тогда моё решение вот такое */
+
+      for (var i = a; i <= b; i++) {
+        if ((i % 3 === 0) && (i % 5 === 0)) {
+          console.log(i + ' - Fuddy-Duddy');
+          continue;
+        }
+
+        if (i % 3 === 0) {
+          console.log(i + ' - Fuddy');
+          continue;
+        }
+
+        if (i % 5 === 0) {
+          console.log(i + ' - Duddy');
+          continue;
+        }
+
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>
